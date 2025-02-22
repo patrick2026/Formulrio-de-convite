@@ -10,79 +10,165 @@
     <div class="pagina-toda">
       <header>
         <div class="titulo">
-        <h1>Crie seu convite</h1>
-      </div>
-      </header>
+          <h1>Crie seu convite</h1>
+        </div>
 
-      <main>
+        <!-----------------fORMULARIO-------------------------------------------->
+        <form action="" method="post">
+          <fieldset>
+            <p>Título</p>
+            <input
+              type="text"
+              id="titulo"
+              name="titulo"
+              placeholder="Nome do evento"
+            />
+          </fieldset>
+
+          <!-- Datas lado a lado -->
+          <div class="data">
+            <div class="data-input">
+              <p>Início</p>
+              <input type="date" id="inicio" name="inicio" />
+            </div>
+            <div class="data-input">
+              <p>Fim</p>
+              <input type="date" id="fim" name="fim" />
+            </div>
+          </div>
+
+          <!-- Endereço e botões lado a lado -->
+          <div class="local">
+            <div class="botoes">
+              <p>Tipo</p>
+              <button class="btn-secondary" type="button">Presencial</button>
+              <button class="btn-primary" type="submit">Online</button>
+            </div>
+
+            <div class="local-input">
+              <p>Local</p>
+              <input
+                type="text"
+                id="local"
+                name="local"
+                placeholder="Link ou endereço"
+              />
+            </div>
+          </div>
+
+          <fieldset>
+            <p>Descrição</p>
+            <textarea
+              name="descricao"
+              id="descricao"
+              cols="40"
+              rows="5"
+              placeholder="Informações importantes"
+            ></textarea>
+          </fieldset>
+        </form>
+        <!----------------- FIM FORMULARIO------------------------------------->
+      </header>
+      <main onclick="abrirCalendario()">
         <div class="calendario">
-          <img src="icones/calendar.svg" alt="calendario">
+          <img
+            class="calendario-icon"
+            src="icones/calendar.svg"
+            alt="Calendário"
+            id="calendario-icon"
+          />
           <h2>Sobre o evento</h2>
+          <input type="date" id="calendario-input" />
         </div>
       </main>
 
       <!----------------------------LYOUT 01------------------------------>
       <section class="flexbox">
         <div class="item">
-          <img src="image/Image (1).svg" alt="" />
-          <p>Aniversário</p>
+          <a href="aniversario.html">
+            <img src="image/aniversario.svg" alt="Aniversário" />
+            <p>Aniversário</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (2).svg" alt="" />
-          <p>Formatura</p>
+          <a href="infantil.html">
+            <img src="image/infantil.svg" alt="Infantil" />
+            <p>Infantil</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (3).svg" alt="" />
-          <p>Casamento</p>
+          <a href="formatura.html">
+            <img src="image/formatura.svg" alt="Formatura" />
+            <p>Formatura</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (4).svg" alt="" />
-          <p>Chá de bebê</p>
+          <a href="casamento.html">
+            <img src="image/casamento.svg" alt="Casamento" />
+            <p>Casamento</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (5).svg" alt="" />
-          <p>Chá de panela</p>
+          <a href="bebe.html">
+            <img src="image/bebe.svg" alt="Chá de bebê" />
+            <p>Chá de bebê</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (6).svg" alt="" />
-          <p>Carnaval</p>
+          <a href="panela.html">
+            <img src="image/pabela.svg" alt="Chá de panela" />
+            <p>Chá de panela</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (7).svg" alt="" />
-          <p>Páscoa</p>
+          <a href="carnaval.html">
+            <img src="image/carnaval.svg" alt="Carnaval" />
+            <p>Carnaval</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (8).svg" alt="" />
-          <p>São João</p>
+          <a href="pascoa.html">
+            <img src="image/pascoa.svg" alt="Páscoa" />
+            <p>Páscoa</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (9).svg" alt="" />
-          <p>Halloween</p>
-        </div class="item">
-
-        <div class="item">
-          <img src="image/Image (10).svg" alt="" />
-          <p>Aniversário</p>
+          <a href="quadrilha.html">
+            <img src="image/quadrilha.svg" alt="São João" />
+            <p>São João</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (11).svg" alt="" />
-          <p>Natal</p>
+          <a href="helloween.html">
+            <img src="image/hellow.svg" alt="Halloween" />
+            <p>Halloween</p>
+          </a>
         </div>
 
         <div class="item">
-          <img src="image/Image (12).svg" alt="" />
-          <p>Outro</p>
+          <a href="natal.html">
+            <img src="image/natal.svg" alt="Natal" />
+            <p>Natal</p>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="festa.html">
+            <img src="image/festa.svg" alt="Festa" />
+            <p>Festa</p>
+          </a>
         </div>
       </section>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
