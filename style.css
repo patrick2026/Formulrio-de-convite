@@ -1,0 +1,70 @@
+/*resetando e fazendo a logo*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1550px;
+  max-height: 2066px;
+  background-color: #383d42;
+}
+.pagina-toda {
+  align-items: center;
+  max-width: 960px;
+  max-height: 1981px;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-color: #212427;
+}
+
+.titulo {
+  text-align: left; /*alinha ao centro*/
+  margin-top: 100px;
+  padding-top: 165px; /*espaço em cima*/
+  padding-bottom: 40px; /*espaço em baixo*/
+  color: #f9f9f9;
+}
+
+p {
+  color: #f9f9f9;
+}
+
+/*----------------------calendario-----------------------------------*/
+.calendario {
+  display: flex;
+  gap: 12px;
+  color: #f9f9f9;
+}
+
+/*-----------------LAYTOUT COM LINH E COLUNAS 1-------------------*/
+
+.flexbox {
+  display: flex; /*UM AO LADO DO OUTRO*/
+  gap: 8px;
+  flex-wrap: wrap; /*QUANDO A TELA FICAR MENOR UM FICA EM CIMA OUTRO EM BAIXO*/
+  max-width: 960px; /*LARGURA*/
+}
+
+.flexbox div {
+  flex: 1 1 200px; /*QUANDO A TELA FICAR MENOR UM FICA EM CIMA OUTRO EM BAIXO*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 4px 8px;
+  gap: 8px;
+  background: #2d3136;
+  border: 1px solid #363b40;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.flexbox img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 4px;
+}
