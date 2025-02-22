@@ -14,7 +14,7 @@ body {
 .pagina-toda {
   align-items: center;
   max-width: 960px;
-  max-height: 2600px;
+  max-height: 2750px;
   margin-inline: auto;
   border-radius: 10px;
   background-color: #131516;
@@ -314,4 +314,34 @@ textarea {
   word-wrap: break-word; /* Quebra as palavras longas para não estourar a largura */
   white-space: normal; /* Permite quebra de linha no texto do label */
   text-align: center; /* Alinha o texto no centro */
+}
+#botao-final {
+  justify-content: right;
+}
+
+#botao-final [type="button"] {
+  /* Button */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 81.6%;
+  gap: 12px;
+  width: 177px;
+  height: 48px;
+  background: #1d6fb6;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #007bff; /* Azul */
+  color: white; /* Texto branco para contraste */
+  transition: 0.3s; /* Suaviza a mudança de cor */
+  cursor: pointer;
 }
