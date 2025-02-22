@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
           <h1>Crie seu convite</h1>
         </div>
 
-        <!-----------------fORMULARIO-------------------------------------------->
+        <!-- FORMULÁRIO -->
         <form action="" method="post">
           <fieldset>
             <p>Título</p>
@@ -67,8 +67,8 @@
             ></textarea>
           </fieldset>
         </form>
-        <!----------------- FIM FORMULARIO------------------------------------->
       </header>
+
       <section>
         <div class="calendario">
           <img
@@ -82,112 +82,121 @@
         </div>
       </section>
 
-      <!----------------------------LYOUT 01------------------------------>
+      <!-- Layout de ícones de eventos -->
       <section class="flexbox">
         <div class="item">
           <a href="aniversario.html">
-            <img src="image/aniversario.svg" alt="Aniversário" />
+            <img
+              class="evento-img"
+              src="image/aniversario.svg"
+              alt="Aniversário"
+            />
             <p>Aniversário</p>
           </a>
         </div>
 
         <div class="item">
           <a href="infantil.html">
-            <img src="image/infantil.svg" alt="Infantil" />
+            <img class="evento-img" src="image/infantil.svg" alt="Infantil" />
             <p>Infantil</p>
           </a>
         </div>
 
         <div class="item">
           <a href="formatura.html">
-            <img src="image/formatura.svg" alt="Formatura" />
+            <img class="evento-img" src="image/formatura.svg" alt="Formatura" />
             <p>Formatura</p>
           </a>
         </div>
 
         <div class="item">
           <a href="casamento.html">
-            <img src="image/casamento.svg" alt="Casamento" />
+            <img class="evento-img" src="image/casamento.svg" alt="Casamento" />
             <p>Casamento</p>
           </a>
         </div>
 
         <div class="item">
           <a href="bebe.html">
-            <img src="image/bebe.svg" alt="Chá de bebê" />
+            <img class="evento-img" src="image/bebe.svg" alt="Chá de bebê" />
             <p>Chá de bebê</p>
           </a>
         </div>
 
         <div class="item">
           <a href="panela.html">
-            <img src="image/panela.svg" alt="Chá de panela" />
+            <img
+              class="evento-img"
+              src="image/panela.svg"
+              alt="Chá de panela"
+            />
             <p>Chá de panela</p>
           </a>
         </div>
 
         <div class="item">
           <a href="carnaval.html">
-            <img src="image/carnaval.svg" alt="Carnaval" />
+            <img class="evento-img" src="image/carnaval.svg" alt="Carnaval" />
             <p>Carnaval</p>
           </a>
         </div>
 
         <div class="item">
           <a href="pascoa.html">
-            <img src="image/pascoa.svg" alt="Páscoa" />
+            <img class="evento-img" src="image/pascoa.svg" alt="Páscoa" />
             <p>Páscoa</p>
           </a>
         </div>
 
         <div class="item">
           <a href="quadrilha.html">
-            <img src="image/quadrilha.svg" alt="São João" />
+            <img class="evento-img" src="image/quadrilha.svg" alt="São João" />
             <p>São João</p>
           </a>
         </div>
 
         <div class="item">
           <a href="helloween.html">
-            <img src="image/hellow.svg" alt="Halloween" />
+            <img class="evento-img" src="image/hellow.svg" alt="Halloween" />
             <p>Halloween</p>
           </a>
         </div>
 
         <div class="item">
           <a href="natal.html">
-            <img src="image/natal.svg" alt="Natal" />
+            <img class="evento-img" src="image/natal.svg" alt="Natal" />
             <p>Natal</p>
           </a>
         </div>
 
         <div class="item">
           <a href="festa.html">
-            <img src="image/festa.svg" alt="Festa" />
+            <img class="evento-img" src="image/festa.svg" alt="Festa" />
             <p>Festa</p>
           </a>
         </div>
       </section>
-      <!----------------SEGUNDO INPUT------------------------>
+
+      <!-- Dados de Contato -->
       <section>
         <div class="dados-contato">
-          <img src="icones/contact.svg" alt="contato" id="contato" />
+          <img
+            class="contato-icon"
+            src="icones/contact.svg"
+            alt="contato"
+            id="contato"
+          />
           <h2>Sobre o evento</h2>
         </div>
       </section>
 
       <fieldset>
         <p>Nome</p>
-        <input
-            type="text"
-            id="titulo"
-            name="titulo"
-            placeholder="Nome Completo"
-        />
+        <input type="text" id="nome" name="nome" placeholder="Nome Completo" />
 
         <div class="email-telefone">
-        <p>Email</p>
-        <input
+          <p>Email</p>
+          <input
             type="text"
             id="email"
             name="email"
@@ -195,14 +204,42 @@
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             title="Digite um e-mail válido"
             required
-        />
+          />
 
-        <p>Telefone:</p>
-        <input type="text" id="telefone" maxlength="11" placeholder="(xx) xxxxx-xxxx">
-      </div>
-        </fieldset>
+          <p>Telefone:</p>
+          <input
+            type="text"
+            id="telefone"
+            maxlength="11"
+            placeholder="(xx) xxxxx-xxxx"
+            required
+            pattern="\(\d{2}\) \d{5}-\d{4}"
+          />
+        </div>
       </fieldset>
+
+      <!-- Termos e Condições -->
+      <section>
+        <div id="termos-global">
+          <div class="termo">
+            <input type="checkbox" id="termo1" />
+            <label for="termo1">Aceito os Termos e Condições</label>
+          </div>
+          <div class="termo">
+            <input type="checkbox" id="termo2" />
+            <label for="termo2">Aceito receber notificações</label>
+          </div>
+          <div class="termo">
+            <input type="checkbox" id="termo3" />
+            <label for="termo3">Concordo com a política de privacidade</label>
+          </div>
+        </div>
+      </section>
+      <div id="botao-final">
+        <button type="submit">Enviar</button>
+      </div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
