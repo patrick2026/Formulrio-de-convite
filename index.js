@@ -1,6 +1,6 @@
 document
   .getElementById("calendario-icon")
-  .addEventListener("click", abrirCalendario(), function (event) {
+  .addEventListener("click", function () {
     let inputData = document.getElementById("calendario-input");
-    inputData.showPicker(event); // Exibe o calendário nativo do navegador
+    inputData.showPicker(); // Exibe o calendário nativo do navegador
   });

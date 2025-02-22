@@ -6,13 +6,13 @@
 }
 body {
   max-width: 1550px;
-  max-height: 2066px;
+  max-height: 2200px;
   background-color: #383d42;
 }
 .pagina-toda {
   align-items: center;
   max-width: 960px;
-  max-height: 1981px;
+  max-height: 2100px;
   margin-inline: auto;
   border-radius: 10px;
   background-color: #131516;
@@ -32,10 +32,6 @@ p {
 
 /*----------------------calendario-----------------------------------*/
 
-main {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
 .calendario {
   display: flex;
   flex-direction: column;
@@ -50,25 +46,23 @@ main {
   text-align: center;
   color: white;
   width: 250px;
+  margin-bottom: 20px;
 }
 
-.calendario,
-.calendario-icon {
-  box-sizing: border-box;
-  width: 40%;
-  height: 40%;
-  margin-bottom: 16px;
-  transform: scale(0.9);
+.calendario img {
+  width: 50px;
+  height: 50px;
   transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
-.calendario:hover {
-  box-sizing: border-box;
-  transform: scale(1);
+.calendario img:hover {
+  transform: scale(1.1);
+  filter: invert(31%) sepia(99%) saturate(748%) hue-rotate(190deg)
+    brightness(92%) contrast(97%);
 }
 
 /* Esconde o input de data */
-#calendario-input {
+.calendario-input {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,7 +72,16 @@ main {
   height: 100%;
   cursor: pointer;
 }
-
+.calendario-icon {
+  width: 30px; /* Ícone grande */
+  height: 30px;
+  cursor: pointer;
+}
+.calendario-icon:not(:first-of-type) {
+  width: 15px; /* Ícones pequenos */
+  height: 15px;
+  opacity: 0.3; /* Ícones transparentes */
+}
 /*--------------------------Formulario---------------------------------*/
 /* Remove a borda do fieldset */
 fieldset {
@@ -86,8 +89,8 @@ fieldset {
   padding: 0;
 }
 fieldset p {
-  margin-bottom: 12px;
-  margin-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 fieldset input {
   box-sizing: border-box;
@@ -263,4 +266,17 @@ textarea {
 .flexbox a:hover {
   background-color: #007bff; /* Azul */
   opacity: 2; /* Efeito de hover para indicar que é clicável */
+}
+
+/*-----------------Segundo input---------------------------------------*/
+.dados-contato {
+  display: flex;
+  gap: 10px;
+  background-color: #131516;
+  color: white;
+}
+.email-telefone {
+  display: flex;
+  width: 100%;
+  gap: 10px;
 }
